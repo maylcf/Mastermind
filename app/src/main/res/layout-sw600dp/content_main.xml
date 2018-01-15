@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mayarafelix.mastermind.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingStart="@dimen/activity_horizontal_margin"
+        android:paddingEnd="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundBrown">
+
+        <!-- Master Sequence -->
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_small_padding"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"
+            android:background="@drawable/background_board">
+
+            <LinearLayout
+                android:id="@+id/masterSequenceHolder"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@id/timer">
+
+                <ImageButton style="@style/MasterSequence" android:id="@+id/master_seq_0"/>
+                <ImageButton style="@style/MasterSequence" android:id="@+id/master_seq_1"/>
+                <ImageButton style="@style/MasterSequence" android:id="@+id/master_seq_2"/>
+                <ImageButton style="@style/MasterSequence" android:id="@+id/master_seq_3"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Timer"
+                android:id="@+id/timer"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+        <!-- Plays -->
+
+        <TableLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/activity_vertical_margin_small"
+            android:background="@drawable/background_board"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <!-- Row 7 -->
+
+            <TableRow style="@style/RowTheme">
+
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_7_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_7_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_7_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_7_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l7_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l7_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l7_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l7_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 6 -->
+
+            <TableRow style="@style/RowTheme">
+
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_6_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_6_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_6_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_6_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l6_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l6_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l6_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l6_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 5 -->
+
+            <TableRow style="@style/RowTheme">
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_5_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_5_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_5_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_5_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l5_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l5_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l5_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l5_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 4 -->
+
+            <TableRow style="@style/RowTheme">
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_4_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_4_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_4_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_4_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l4_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l4_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l4_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l4_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 3 -->
+
+            <TableRow style="@style/RowTheme">
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_3_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_3_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_3_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_3_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l3_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l3_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l3_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l3_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 2 -->
+
+            <TableRow style="@style/RowTheme">
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_2_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_2_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_2_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_2_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l2_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l2_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l2_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l2_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 1 -->
+
+            <TableRow style="@style/RowTheme">
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_1_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_1_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_1_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_1_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l1_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l1_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l1_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l1_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+            <View style="@style/LineDivisor"/>
+
+            <!-- Row 0 -->
+
+            <TableRow style="@style/RowTheme">
+
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_0_btn_0"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_0_btn_1"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_0_btn_2"/>
+                <ImageButton style="@style/PlaySequenceItem" android:id="@+id/lin_0_btn_3"/>
+
+                <LinearLayout style="@style/HorizontalResultHolder">
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l0_i0"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l0_i1"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l0_i2"/>
+                    <ImageView style="@style/EmptyResult" android:id="@+id/result_l0_i3"/>
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- Picking Options -->
+
+        <LinearLayout style="@style/PickingOptionHolder">
+
+            <ImageButton android:id="@+id/pick_opt_0" style="@style/PickingOptionStyle" />
+            <ImageButton android:id="@+id/pick_opt_1" style="@style/PickingOptionStyle" />
+            <ImageButton android:id="@+id/pick_opt_2" style="@style/PickingOptionStyle" />
+            <ImageButton android:id="@+id/pick_opt_3" style="@style/PickingOptionStyle" />
+            <ImageButton android:id="@+id/pick_opt_4" style="@style/PickingOptionStyle" />
+            <ImageButton android:id="@+id/pick_opt_5" style="@style/PickingOptionStyle" />
+
+            <ImageButton
+                android:id="@+id/btnCheckRow"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_check_24dp"
+                android:theme="@style/ConfirmButton" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

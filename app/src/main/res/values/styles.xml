@@ -1,0 +1,134 @@
+<resources>
+
+    <style name="RowTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+    </style>
+
+    <!-- GAME ACTIVITY -->
+
+    <style name="HorizontalResultHolder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/background_line</item>
+    </style>
+
+    <style name="VerticalResultHolder">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LineDivisor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/lineDivisor</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+    </style>
+
+    <style name="PickingOptionHolder">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_board</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/picking_option_holder_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/picking_option_holder_vertical_margin</item>
+        <item name="android:paddingTop">@dimen/activity_small_padding</item>
+        <item name="android:paddingBottom">@dimen/activity_small_padding</item>
+
+    </style>
+
+    <style name="Timer">
+        <item name="android:layout_width">@dimen/timer_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">@dimen/timer_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/default_timer_text</item>
+    </style>
+
+    <!-- SCORE ACTIVITY -->
+
+    <style name="ScoreRow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="ScoreRowTextNumber">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0.3</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="ScoreRowTextName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="ScoreRowTextPunctuation">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">textStart</item>
+    </style>
+
+    <style name="StarScoreDialog">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/ic_star_score_1</item>
+    </style>
+
+    <!-- TOP 5 MESSAGE -->
+
+    <style name="TopFivePlayerNameInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/input_player_name_text_size</item>
+        <item name="android:background">@color/background3</item>
+        <item name="android:textColor">@color/background5</item>
+    </style>
+
+    <!-- Base application theme. -->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

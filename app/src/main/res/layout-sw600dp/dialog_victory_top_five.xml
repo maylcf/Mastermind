@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginEnd="24dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/background_score">
+
+        <TextView
+            android:id="@+id/victoryTitle1"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/victory_title_1"/>
+
+        <LinearLayout
+            android:id="@+id/victoryTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/victoryTitle1"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="16dp">
+
+            <ImageView style="@style/StarScoreDialog"/>
+            <ImageView style="@style/StarScoreDialog" android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/victoryTop5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:text="@string/victory_title_top5"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"/>
+
+            <ImageView style="@style/StarScoreDialog" android:layout_marginBottom="8dp"/>
+            <ImageView style="@style/StarScoreDialog"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/victoryPunctuation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_below="@id/victoryTitle2"
+            android:padding="8dp"
+            android:elevation="10dp"
+            android:background="@drawable/background_score_punctuation">
+
+            <TextView
+                android:id="@+id/victoryPunctuationTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shadowColor="#FF000000"
+                android:shadowDx="2"
+                android:shadowDy="2"
+                android:shadowRadius="1.6"
+                android:text="00:30"
+                android:textAlignment="center"
+                android:textColor="@color/background5"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/victoryEnterYourName"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/victoryPunctuation"
+            android:layout_alignStart="@id/victoryUsername"
+            android:text="@string/victory_enter_name_msg"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <EditText
+            style="@style/TopFivePlayerNameInput"
+            android:id="@+id/victoryUsername"
+            android:layout_below="@+id/victoryEnterYourName"
+            android:layout_toStartOf="@+id/okButton"
+            android:layout_alignBottom="@+id/okButton"
+            android:layout_alignTop="@+id/okButton" />
+
+        <ImageButton
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:theme="@style/ConfirmButton"
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/victoryEnterYourName"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_check_24dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="12dp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

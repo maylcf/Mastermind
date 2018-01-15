@@ -1,0 +1,51 @@
+<resources>
+
+    <style name="PlaySequenceItem">
+        <item name="android:layout_width">@dimen/small_button_size</item>
+        <item name="android:layout_height">@dimen/small_button_size</item>
+        <item name="android:onClick">onRowButtonClick</item>
+        <item name="android:background">@drawable/background_circle</item>
+        <item name="android:layout_marginLeft">@dimen/sequence_btn_margin</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/picking_option_btn_padding</item>
+    </style>
+
+    <style name="MasterSequence">
+        <item name="android:layout_width">@dimen/master_sequence_btn_size</item>
+        <item name="android:layout_height">@dimen/master_sequence_btn_size</item>
+        <item name="android:src">@drawable/ic_star</item>
+        <item name="android:tag">answer</item>
+        <item name="android:background">@drawable/background_circle</item>
+        <item name="android:layout_marginRight">@dimen/master_sequence_btn_margin</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/picking_option_btn_padding</item>
+    </style>
+
+    <style name="PickingOptionStyle">
+        <item name="android:layout_width">@dimen/picking_option_btn_size</item>
+        <item name="android:layout_height">@dimen/picking_option_btn_size</item>
+        <item name="android:tag">@string/color_option_tag</item>
+        <item name="android:onClick">onColorOptionClick</item>
+        <item name="android:background">@drawable/background_circle</item>
+        <item name="android:layout_marginStart">@dimen/picking_option_btn_margin</item>
+        <item name="android:layout_marginEnd">@dimen/picking_option_btn_margin</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:padding">@dimen/picking_option_btn_padding</item>
+    </style>
+
+    <style name="EmptyResult">
+        <item name="android:layout_width">@dimen/result_btn_size</item>
+        <item name="android:layout_height">@dimen/result_btn_size</item>
+        <item name="android:src">@drawable/ic_circle_24dp</item>
+    </style>
+
+    <style name="ConfirmButton" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/LimeGreen</item>
+    </style>
+
+    <style name="ViewScoreButton" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">@color/RoyalBlue</item>
+    </style>
+
+</resources>

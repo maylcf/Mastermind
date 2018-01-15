@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Margin -->
+
+    <dimen name="activity_horizontal_margin">96dp</dimen>
+    <dimen name="activity_vertical_margin">96dp</dimen>
+    <dimen name="activity_vertical_margin_small">16dp</dimen>
+    <dimen name="activity_small_padding">16dp</dimen>
+
+    <!-- Buttons -->
+
+    <dimen name="small_button_size">60dp</dimen>
+    <dimen name="picking_option_btn_size">50dp</dimen>
+    <dimen name="picking_option_btn_margin">10dp</dimen>
+    <dimen name="picking_option_btn_padding">5dp</dimen>
+    <dimen name="picking_option_holder_vertical_margin">16dp</dimen>
+    <dimen name="sequence_btn_margin">10dp</dimen>
+    <dimen name="result_btn_size">40dp</dimen>
+    <dimen name="master_sequence_btn_size">60dp</dimen>
+    <dimen name="master_sequence_btn_margin">10dp</dimen>
+    <dimen name="confirm_top_five_btn_width">30dp</dimen>
+
+    <!-- Timer -->
+
+    <dimen name="timer_text_size">40sp</dimen>
+    <dimen name="timer_width">140dp</dimen>
+
+    <!-- Text -->
+
+    <dimen name="input_player_name_text_size">24sp</dimen>
+
+</resources>

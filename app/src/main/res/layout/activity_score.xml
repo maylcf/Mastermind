@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundBrown">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <ImageView style="@style/StarScoreDialog" android:layout_marginTop="8dp" />
+        <ImageView style="@style/StarScoreDialog"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/activity_score_title"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView style="@style/StarScoreDialog" />
+        <ImageView style="@style/StarScoreDialog" android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_board"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <TableRow style="@style/ScoreRow">
+            <TextView style="@style/ScoreRowTextNumber" android:text="1" />
+            <TextView style="@style/ScoreRowTextName" android:id="@+id/scoreName1" android:text="....." />
+            <TextView style="@style/ScoreRowTextPunctuation" android:id="@+id/scoreTime1" android:text="....." />
+        </TableRow>
+
+        <TableRow style="@style/ScoreRow">
+            <TextView style="@style/ScoreRowTextNumber" android:text="2" />
+            <TextView style="@style/ScoreRowTextName" android:id="@+id/scoreName2" android:text="....." />
+            <TextView style="@style/ScoreRowTextPunctuation" android:id="@+id/scoreTime2" android:text="....." />
+        </TableRow>
+
+        <TableRow style="@style/ScoreRow">
+            <TextView style="@style/ScoreRowTextNumber" android:text="3" />
+            <TextView style="@style/ScoreRowTextName" android:id="@+id/scoreName3" android:text="....." />
+            <TextView style="@style/ScoreRowTextPunctuation" android:id="@+id/scoreTime3" android:text="....." />
+        </TableRow>
+
+        <TableRow style="@style/ScoreRow">
+            <TextView style="@style/ScoreRowTextNumber" android:text="4" />
+            <TextView style="@style/ScoreRowTextName" android:id="@+id/scoreName4" android:text="....." />
+            <TextView style="@style/ScoreRowTextPunctuation" android:id="@+id/scoreTime4" android:text="....." />
+        </TableRow>
+
+        <TableRow style="@style/ScoreRow">
+            <TextView style="@style/ScoreRowTextNumber" android:text="5" />
+            <TextView style="@style/ScoreRowTextName" android:id="@+id/scoreName5" android:text="....." />
+            <TextView style="@style/ScoreRowTextPunctuation" android:id="@+id/scoreTime5" android:text="....." />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
